@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de monedas Nacional</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <h1 class="title">Conversor de monedas Nacional</h1>
+    </nav>
+    <div>
+        <h2 id="error"></h2>
+    </div>
+    <section class="card">
+        <div>
+            <p>Pesos Chilenos</p>
+            <input class="inputdesign" type="number" placeholder="Ingrese el monto en CLP" id="inputQuantity">
+        </div>
+        <div>
+            <p>Moneda a convertir:</p>
+            <select class="currencyDesign" name="" id="typeOfCurrency">
+                <option value="" disabled>Seleccione moneda</option>
+                <option value="dolar">Dólar</option>
+                <option value="euro">Euro</option>
+                <option value="bitcoin">Bitcoin</option>
+                <option value="uf">Unidad de fomento</option>
+                <option value="utm">Unidad Tributaria Mensual</option>
+                <option value="ipc">Indice de Precios al Consumidor</option>
+            </select>
+        </div>
+        <div class="btn">
+            <button id="btnCurrency">Buscar</button>
+        </div>
+        <div>
+            <p id="exchange">...</p>
+        </div>
+        <div>
+            <canvas class="chart" id="myChart"></canvas>
+        </div>
+    </section>
+    <footer>
+        <p>Desafio API 2022.</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
